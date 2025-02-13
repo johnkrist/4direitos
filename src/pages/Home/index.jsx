@@ -1,5 +1,6 @@
 import { Container, Sections } from "./style";
 import { Menu } from "../../components/Menu";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -7,26 +8,30 @@ export function Home() {
       <Menu />
       <Container>
         <Sections>
-          <div className="big-div">
-            <p>Civil</p>
-          </div>
-          <div>
-            <p>Processo Civil</p>
-          </div>
-          <div className="big-div">
-            <p>Penal</p>
-          </div>
-        </Sections>
-        <Sections>
-          <div>
-            <p>Processo Penal</p>
-          </div>
-          <div id="mid-div" className="big-div">
-            <p></p>
-          </div>
-          <div>
-            <p></p>
-          </div>
+          <section>
+            <div className="big-div">
+              <p>Civil</p>
+            </div>
+            <text>psam saepe gfgasfgagiuouiiçjkçjkljklut debitis impefghjfghjfghjdit est voluptate ptem perspiciatis. Non hjghjghjghjfghjfgjhgfhsunt esse qui animi explicabmmo...<Link className="about-more">Saiba mais</Link></text>
+          </section>
+          <section>
+            <text>psam saepe gfgasfgagiuouiiçjkçjkljklut debitis impefghjfghjfghjdit est voluptate ptem perspiciatis. Non hjghjghjghjfghjfgjhgfhsunt esse qui animi explicabmmo...<Link className="about-more">Saiba mais</Link></text>
+            <div className="litle-div">
+              <p>Processo Civil</p>
+            </div>
+          </section>
+          <section>
+            <div className="big-div">
+              <p>Penal</p>
+            </div>
+            <text>psam saepe gfgasfgagiuouiiçjkçjkljklut debitis impefghjfghjfghjdit est voluptate ptem perspiciatis. Non hjghjghjghjfghjfgjhgfhsunt esse qui animi explicabmmo...<Link className="about-more" >Saiba mais</Link> </text>
+          </section>
+          <section>
+            <text>psam saepe gfgasfgagiuouiiçjkçjkljklut debitis impefghjfghjfghjdit est voluptate ptem perspiciatis. Non hjghjghjghjfghjfgjhgfhsunt esse qui animi explicabmmob...<Link className="about-more">Saiba mais</Link></text>
+            <div className="litle-div">
+              <p>Processo Penal</p>
+            </div>
+          </section>
         </Sections>
       </Container>
     </>
